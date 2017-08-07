@@ -12,9 +12,13 @@ z = list()
 sum = 0
 for line in fun:
 	z = line.rstrip()
-	y = re.findall('[0-9]+',z) #look thourgh all the numbers
+	y = re.findall('[0-9]+',z) 
+	#look thourgh all the numbers, it returns a list of string, so Y is a list
 	for word in y:
+		#check all the string in the list
 		if len(word)>0:
+			#there is some line without numbers, er need to skip those lines
 			sum = sum + int(word)
+			#cannot add int with str, so need to convert int to str
 print(sum)
 
