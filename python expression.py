@@ -19,6 +19,6 @@ for line in fun:
 		if len(word)>0:
 			#there is some line without numbers, er need to skip those lines
 			sum = sum + int(word)
-			#cannot add int with str, so need to convert int to str
+			#cannot add int with str, so need to convert to int
 print(sum)
 
